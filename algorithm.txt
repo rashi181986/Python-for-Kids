@@ -1,0 +1,7 @@
+step 1: start
+step 2: declare variables num1, num2 and sum,
+step 3: read values num1 and num2
+step 4: add num1 and num2 and assign the result to sum
+	sum = num1+num2
+step 5: dispaly sum
+step 6: stop
