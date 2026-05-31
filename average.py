@@ -1,14 +1,30 @@
-# Storing Values
-tree1 = 98
-tree2 = 94
-tree3 = 41
-tree4 = 95
-tree5 = 11
+import matplotlib.pyplot as plt
 
-# Finding the total of trees
-sum = tree1+tree2+tree3+tree4+tree5
-print("the sum of all the 5 trees is: ", sum)
+students_names=["sanjay","Rahul","Karan","Wasim","Ramesh","Ajay","Sartaj","Priya"]
+students_marks=[35,50,20,45,25,40,25,40]
 
-# Finding the average of trees
-average = sum/5
-print("the average of all the tree is :", average)
+marks_perc = []
+for x in students_marks:
+	res = (x/50)*100
+	marks_perc.append(res)
+
+print(marks_perc)
+
+def line_chart_of_students_and_marks():
+  plt.plot(students_names,students_marks)
+  plt.title("Students Marks Graph")
+  plt.xlabel("Students Names")
+  plt.ylabel("Students Marks")
+  plt.show()
+
+line_chart_of_students_and_marks()
+
+# bar chart 
+def percentage_bar_chart():
+  plt.bar(students_names,marks_perc)
+  plt.title("Students' Percentage Graph")
+  plt.xlabel("Student Names")
+  plt.ylabel("Student Percentage")
+  plt.show()
+
+percentage_bar_chart()
