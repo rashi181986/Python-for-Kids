@@ -1,8 +1,9 @@
-actual_cost = float(input(" Please Enter the Actual Product Price: "))
-sale_amount = float(input(" Please Enter the Sales Amount: "))
- 
-if (sale_amount > actual_cost):
-    amount = sale_amount - actual_cost
-    print("Total Profit = {0}".format(amount))
-else:
-    print("No Profit!!!")
+costprice =int(input("enter the cp: "))
+sellingprice =int(input("enter the sp: "))
+
+if(sellingprice>costprice):
+  print("profit")
+  pt=sellingprice-costprice
+  print(pt)
+else :
+  print("No profit")

@@ -1,11 +1,8 @@
-# Draw a square using Turtle
-
 import turtle
-
 t = turtle.Turtle()
-
+s = int(input("Enter the length of the side of the Square: "))  
 for i in range(4):
-    t.forward(100)  # Move forward 100 pixels
-    t.right(90)     # Turn right by 90 degrees
+  # drawing first side
+  t.forward(50) # Forward turtle by s units
+  t.left(90) # Turn turtle by 90 degree
 
-turtle.done()

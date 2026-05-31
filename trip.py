@@ -1,4 +1,4 @@
-# Define a function called hotel_cost with one argument nights as input.
+
 def hotel_cost(nights):
     return 140*nights
 
@@ -26,7 +26,7 @@ def rental_car_cost(days):
 def trip_cost(city, days, spending_money):
     return rental_car_cost(days) + hotel_cost(days) + plane_ride_cost(city) + spending_money
 	
-print("Cost of car rental: ",rental_car_cost(5))
+print("Cost of car rental: ",rental_car_cost(6))
 
 print("Cost of plane ride: ",plane_ride_cost("Los Angeles"))
 

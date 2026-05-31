@@ -1,6 +1,6 @@
 #take two input from user
-lower = int(input("enter a lower range: "))
-upper = int(input("enter a upper range: "))
+lower = int(input("Enter a lower range: "))
+upper = int(input("Enter a upper range: "))
 
 print("Prime numbers between", lower, "and", upper, "are:")
 #iterate loop from lower limit to upper limit

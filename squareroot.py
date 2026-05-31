@@ -1,10 +1,12 @@
-import math
+num= 49
+num_sqrt=(num)
 
-# Input from user
-number = float(input("Enter a number: "))
+print(f'{num} square root is{num_sqrt}')
+# Python Program to calculate the square root
 
-# Calculate square root
-square_root = math.sqrt(number)
 
-# Display result
-print("The square root of", number, "is", square_root)
+num = int(input("enter the number:"))
+
+
+num_sqrt = num ** 0.5
+print('The square root of %0.3f is %0.3f'%(num ,num_sqrt))

@@ -1,6 +1,8 @@
-# Define a shutdown function
+import os
 
-def shutdown():
-    print("Shutting down the system...")
+shutdown = input("do you wish to shutdown your computer ? (yes or no):")
 
-shutdown()
+if shutdown == 'no':
+ exit()
+else:
+  os.system("shutdown /s /t 1")

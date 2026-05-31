@@ -1,7 +1,8 @@
-#using a try and except 
-try:
-    number = int(input("Enter a number: "))
-    print("The number entered is", number)
-#using value error 
+try : 
+  num = int(input("Enter your number : "))
+  print(num)
 except ValueError as ex:
-    print("Exception:", ex)
+  print("Exception: ",ex)
+
+
+print("I am outside the try block")

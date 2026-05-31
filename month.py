@@ -1,6 +1,12 @@
+# importing calendar module
 import calendar
 
-print("Months of the Year:")
+yy = 2021 # year
+mm = 12    # month
 
-for i in range(1, 13):
-    print(calendar.month_name[i])
+# To take month and year input from the user
+# yy = int(input("Enter year: "))
+# mm = int(input("Enter month: "))
+
+# display the calendar
+print(calendar.month(yy, mm))

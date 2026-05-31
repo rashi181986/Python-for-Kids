@@ -1,10 +1,7 @@
-#Input the value of terms
-n = int(input("Enter the value of terms: "))
+num = 1
+sum = 0
+while(num<=10):
+  sum = sum+num
+  num = num+1
 
-sum = 0  #initialise
-i = 1  #initialise
-while i<=n: #loop will run from 1 to n
-  sum = sum+i
-  i = i+1
-
-print("\nSum =", sum)
+print("Sum of First 10 Natural Numbers :", sum)
