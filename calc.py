@@ -1,38 +1,30 @@
-def add(P, Q):    
-   # This function is used for adding two numbers   
-   return P + Q   
-def subtract(P, Q):   
-   # This function is used for subtracting two numbers  
-   return P - Q   
-def multiply(P, Q):   
-   # This function is used for multiplying two numbers  
-   return P * Q   
-def divide(P, Q):   
-   # This function is used for dividing two numbers    
-   return P / Q 
-      
-# Now we will take inputs from the user    
-print ("Please select the operation.")    
-print ("a. Add")    
-print ("b. Subtract")    
-print ("c. Multiply")    
-print ("d. Divide")    
-    
-choice = input("Please enter choice (a/ b/ c/ d): ")    
-    
-num_1 = int (input ("Please enter the first number: "))    
-num_2 = int (input ("Please enter the second number: "))    
-    
-if choice == 'a':    
-   print (num_1, " + ", num_2, " = ", add(num_1, num_2))    
-    
-elif choice == 'b':    
-   print (num_1, " - ", num_2, " = ", subtract(num_1, num_2))    
-    
-elif choice == 'c':    
-   print (num_1, " * ", num_2, " = ", multiply(num_1, num_2))  
+def add(x, y):
+    z=x+y
+    print(z)
 
-elif choice == 'd':    
-   print (num_1, " / ", num_2, " = ", divide(num_1, num_2))    
-else:    
-   print ("This is an invalid input")    
+def sub(x, y):
+    z=x-y
+    print(z)
+
+def div(x, y):
+    z=x/y
+    print(z)
+
+def mul(x, y):
+    z=x*y
+    print(z)
+
+a=int(input("Enter the first number "))
+b=int(input("Enter the first number "))
+c=input("Options add, sub, mul, div ")
+if(c=="add"):
+    add(a,b)
+elif(c=="sub"):
+    sub(a,b)
+elif(c=="mul"):
+    mul(a,b)
+elif(c=="div"):
+    div(a,b)
+else:
+    print("Invalid Option")
+

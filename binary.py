@@ -1,7 +1,19 @@
-# Convert decimal to binary
+def converttobinary(n):
+  if n > 1:
+    converttobinary(n//2 )
+  print(n%2 , end=" " )
 
-decimal = int(input("Enter a decimal number: "))
+dec=float(input("enter a number to find it's binary value"))
+converttobinary(dec)
+print()
 
-binary = bin(decimal)
+dec=float(input("enter a number to find it's binary value"))
 
-print("Binary number =", binary[2:])
+def converttobinary(n):
+  if n > 1:
+    converttobinary(n//2 )
+  print(n%2 , end=" " )
+
+
+converttobinary(dec)
+print()

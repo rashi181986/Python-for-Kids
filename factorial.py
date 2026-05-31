@@ -1,16 +1,15 @@
-def factorial(x):
-  '''this is a recursive function to find the factorial of an integer'''
+# Function to calculate factorial
+def factorial(n):
+    if n == 0 or n == 1:  # Base case: 0! and 1! are both 1
+        return 1
+    else:
+        return n * factorial(n - 1)  # Recursive call
 
-  if x==0 or x==1:
-      return 1
-  else:
-    #calling function inside a function
-      return x*factorial(x-1)
+# Input from user
+num = int(input("Enter a number: "))
 
-#display result
-print(factorial.__doc__)
-print("the factorial of 0:",factorial(0))
-print("the factorial of 1:",factorial(1))
-print("the factorial of 2:",factorial(2))
-print("the factorial of 5:",factorial(5))
-print("the factorial of 10:",factorial(10))
+# Check if the number is negative
+if num < 0:
+    print("Factorial does not exist for negative numbers.")
+else:
+    print(f"The factorial of {num} is {factorial(num)}")

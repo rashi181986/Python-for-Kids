@@ -1,16 +1,29 @@
-#Create an empty list
-empty_list = []
-print()
+lst = ['Apple', 'Guava', 'Mango', 'Banana', 'Kiwi']
 
-# A list of numbers
-numbers = [1, 2, 3, 4, 5]
-print(numbers)
+print("Length of list:", len(lst))
+print("First Element:", lst[0])
+print("Last Element:", lst[-1])
 
-# Use * operator
-triples = [1, 2, 3] * 3
-print(triples)
+lst.append('Papaya')
+print("Updated List :", lst)
 
-#reverse the given list
-aList = [100, 200, 300, 400, 500]
-aList = aList[::-1]
-print(aList,"\n")
+lst.remove('Guava')
+print("Updated List :", lst)
+
+lst.sort()
+print("Sorted List:", lst)
+
+lst.pop(1)
+print("Updated List :", lst)
+
+lst.reverse()
+print("Reversed List :", lst)
+
+print("Multiplication on List :", lst*2)
+
+lst = lst[:4]
+print("Sliced List :", lst)
+
+lst.clear()
+print("Updated List :", lst)
+
