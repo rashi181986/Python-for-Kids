@@ -1,10 +1,16 @@
-#Input a word or sentence
-string = input("Please enter your own String : ")
+class StringReverser:
+    def reverse_words(self, text):
+        # 1. split() breaks the string into a list of words
+        # 2. [::-1] reverses that list
+        # 3. ' '.join() puts them back together with spaces
+        words = text.split()
+        reversed_text = " ".join(words[::-1])
+        return reversed_text
 
-string2 = ('')
-#loop for printing in reverse 
-for i in string:
-    string2 = i + string2
-    
-print("\nThe Original String = ", string)
-print("The Reversed String = ", string2)
+# Example Usage:
+reverser = StringReverser()
+input_string = "hello world python"
+result = reverser.reverse_words(input_string)
+
+print(f"Original: {input_string}")
+print(f"Reversed: {result}")
