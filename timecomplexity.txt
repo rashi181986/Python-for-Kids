@@ -1,0 +1,8 @@
+### Summary
+
+| Function        | Time Complexity           | Space Complexity |
+| --------------- | ------------------------- | ---------------- |
+| `fac(n)`        | **O(n)**                  | **O(n)**         |
+| `print1to10(n)` | **O(1)** (fixed limit 10) | **O(1)**         |
+
+For `fac(n)`, the complexity grows with `n`, whereas `print1to10(n)` always performs at most 10 recursive calls, making it constant time.
